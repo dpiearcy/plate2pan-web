@@ -19,9 +19,11 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-xl bg-brand-orange flex items-center justify-center orange-glow-sm group-hover:scale-105 transition-transform">
-            <span className="text-sm">🍳</span>
-          </div>
+          <img
+            src="/app-icon.png"
+            alt="Plate to Pan"
+            className="w-9 h-9 rounded-xl group-hover:scale-105 transition-transform"
+          />
           <span className="font-semibold text-white tracking-tight">Plate to Pan</span>
         </Link>
 
