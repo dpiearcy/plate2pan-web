@@ -9,9 +9,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Brand */}
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-xl bg-brand-orange flex items-center justify-center text-sm">
-              🍳
-            </div>
+            <img src="/app-icon.png" alt="Plate to Pan" className="w-7 h-7 rounded-xl" />
             <span className="font-semibold text-white/80">Plate to Pan</span>
           </div>
 
