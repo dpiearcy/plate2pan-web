@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react'
 
 const freeFeatures = [
-  '10 recipe scans, yours to keep',
+  '10 starter recipe scans planned',
   'Full Cook Mode with timers',
   'Save to cookbook',
   'Dietary profile setup',
@@ -11,7 +11,7 @@ const freeFeatures = [
 
 const proFeatures = [
   'Unlimited recipe scans',
-  'Everything in Free',
+  'Everything in Starter Tier',
   'Apple Watch companion',
   'Meal planner (Mon–Sun)',
   'AI grocery list merge',
@@ -44,14 +44,14 @@ export default function Pricing() {
       <div ref={ref} className="relative z-10 max-w-4xl mx-auto px-6 section-hidden">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 glass-orange rounded-full text-sm font-medium text-brand-orange mb-6">
-            Simple Pricing
+            Planned Launch Pricing
           </div>
           <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
-            Start free.{' '}
+            Try it free.{' '}
             <span className="gradient-text">Upgrade when ready.</span>
           </h2>
           <p className="text-white/50 text-lg max-w-lg mx-auto">
-            10 free scans to see how good it is. No credit card. No time limit.
+            These introductory plans are intended for launch and may change before release.
           </p>
         </div>
 
@@ -59,9 +59,9 @@ export default function Pricing() {
           {/* Free tier */}
           <div className="glass rounded-3xl p-8 flex flex-col">
             <div className="mb-6">
-              <div className="text-white/50 text-sm font-medium mb-2">Free Forever</div>
+              <div className="text-white/50 text-sm font-medium mb-2">Planned Starter Tier</div>
               <div className="text-4xl font-black mb-1">$0</div>
-              <div className="text-white/40 text-sm">10 lifetime scans included</div>
+              <div className="text-white/40 text-sm">10 starter scans planned</div>
             </div>
 
             <ul className="flex-1 space-y-3 mb-8">
@@ -75,12 +75,11 @@ export default function Pricing() {
               ))}
             </ul>
 
-            <a
-              href="https://apps.apple.com/app/plate-to-pan/id0000000000"
-              className="w-full py-3.5 glass rounded-2xl text-center font-semibold text-white/70 hover:text-white hover:bg-white/8 transition-all"
+            <div
+              className="w-full py-3.5 glass rounded-2xl text-center font-semibold text-white/55"
             >
-              Download Free
-            </a>
+              Available at Launch
+            </div>
           </div>
 
           {/* Pro tier */}
@@ -115,14 +114,13 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <a
-                href="https://apps.apple.com/app/plate-to-pan/id0000000000"
-                className="w-full py-3.5 bg-brand-orange hover:bg-brand-orange-dark rounded-2xl text-center font-bold text-white transition-all hover:scale-[1.02] orange-glow block"
+              <div
+                className="w-full py-3.5 bg-brand-orange/80 rounded-2xl text-center font-bold text-white orange-glow block"
               >
-                Start Free Trial
-              </a>
+                Available at Launch
+              </div>
 
-              <p className="text-center text-white/30 text-xs mt-3">7-day free trial · Cancel anytime</p>
+              <p className="text-center text-white/30 text-xs mt-3">Trial offer planned for launch</p>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -12,9 +13,14 @@ export default function PrivacyPolicy() {
       {/* Header */}
       <header className="border-b border-white/5 px-6 py-4">
         <div className="max-w-3xl mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-xl bg-brand-orange flex items-center justify-center text-sm">🍳</div>
-            <span className="font-semibold text-white/80">Plate to Pan</span>
+          <Link href="/" aria-label="Plate2Pan home">
+            <Image
+              src="/branding/logo-white.png"
+              alt="Plate2Pan"
+              width={1630}
+              height={370}
+              className="h-auto w-36 opacity-90 hover:opacity-100 transition-opacity"
+            />
           </Link>
           <Link href="/" className="text-sm text-white/40 hover:text-white/70 transition-colors">← Back to home</Link>
         </div>
@@ -25,6 +31,10 @@ export default function PrivacyPolicy() {
         <p className="text-white/40 text-sm mb-12">Effective date: January 1, 2025 · Last updated: January 1, 2025</p>
 
         <div className="prose prose-invert prose-sm max-w-none space-y-8 text-white/70 leading-relaxed">
+          <div className="glass-orange rounded-2xl p-5">
+            <p className="font-semibold text-white">Pre-launch notice</p>
+            <p className="mt-1">Plate2Pan is not currently available for download. This policy describes website practices now and app data handling once the app is released.</p>
+          </div>
 
           <section>
             <h2 className="text-xl font-bold text-white mb-3">1. Who We Are</h2>

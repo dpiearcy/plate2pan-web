@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react'
 
 const comparisons = [
   { feature: 'View recipes without paying', us: true, them: false },
-  { feature: 'Free scans to try first', us: true, them: false },
+  { feature: 'Starter scans to try first', us: true, them: false },
   { feature: 'Step-by-step Cook Mode', us: true, them: false },
   { feature: 'Per-step built-in timers', us: true, them: false },
   { feature: 'Apple Watch companion', us: true, them: false },
@@ -40,11 +40,11 @@ export default function WhyBetter() {
             Why Plate to Pan
           </div>
           <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
-            The app other apps{' '}
-            <span className="gradient-text">wish they were</span>
+            More than a scanner.{' '}
+            <span className="gradient-text">A kitchen companion.</span>
           </h2>
           <p className="text-white/50 text-lg max-w-xl mx-auto">
-            Other dish-scanning apps give you a recipe and stop. We give you an entire kitchen companion.
+            Plate2Pan is designed to take you from a restaurant photo through cooking and meal planning.
           </p>
         </div>
 
@@ -100,7 +100,7 @@ export default function WhyBetter() {
         </div>
 
         <p className="text-center text-white/30 text-xs mt-6">
-          Comparison based on publicly available information as of 2024. Features subject to change.
+          Planned Plate2Pan feature set shown for launch. Features and availability subject to change.
         </p>
       </div>
     </section>

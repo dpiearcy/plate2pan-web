@@ -53,7 +53,7 @@ export default function HowItWorks() {
             <span className="gradient-text">three steps</span>
           </h2>
           <p className="text-white/50 text-lg max-w-xl mx-auto">
-            No subscriptions to view. No credit card for the first 10 scans. Just point, shoot, and cook.
+            Built for quick dish scans, guided cooking, and saved recipes when Plate2Pan launches.
           </p>
         </div>
 

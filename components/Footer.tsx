@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -8,10 +9,13 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Brand */}
-          <div className="flex items-center gap-2">
-            <img src="/app-icon.png" alt="Plate to Pan" className="w-7 h-7 rounded-xl" />
-            <span className="font-semibold text-white/80">Plate to Pan</span>
-          </div>
+          <Image
+            src="/branding/logo-orange.png"
+            alt="Plate2Pan"
+            width={1630}
+            height={370}
+            className="h-auto w-36 opacity-90"
+          />
 
           {/* Links */}
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm text-white/40">

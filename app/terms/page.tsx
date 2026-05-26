@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -11,9 +12,14 @@ export default function Terms() {
     <div className="min-h-screen bg-dark-900">
       <header className="border-b border-white/5 px-6 py-4">
         <div className="max-w-3xl mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-xl bg-brand-orange flex items-center justify-center text-sm">🍳</div>
-            <span className="font-semibold text-white/80">Plate to Pan</span>
+          <Link href="/" aria-label="Plate2Pan home">
+            <Image
+              src="/branding/logo-white.png"
+              alt="Plate2Pan"
+              width={1630}
+              height={370}
+              className="h-auto w-36 opacity-90 hover:opacity-100 transition-opacity"
+            />
           </Link>
           <Link href="/" className="text-sm text-white/40 hover:text-white/70 transition-colors">← Back to home</Link>
         </div>
@@ -24,6 +30,10 @@ export default function Terms() {
         <p className="text-white/40 text-sm mb-12">Effective date: January 1, 2025 · Last updated: January 1, 2025</p>
 
         <div className="space-y-8 text-white/70 leading-relaxed text-sm">
+          <div className="glass-orange rounded-2xl p-5">
+            <p className="font-semibold text-white">Pre-launch notice</p>
+            <p className="mt-1">Plate2Pan is not currently available for download. These terms apply to the website now and to the app once it is released.</p>
+          </div>
 
           <section>
             <h2 className="text-xl font-bold text-white mb-3">1. Acceptance of Terms</h2>
@@ -32,7 +42,7 @@ export default function Terms() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-3">2. Description of Service</h2>
-            <p>Plate to Pan is an iOS application that uses artificial intelligence to analyze photographs of food dishes and generate estimated recipes, including ingredients, instructions, nutrition information, and other culinary content. The App also provides features including Cook Mode, meal planning, grocery list management, and pantry inventory tracking.</p>
+            <p>Plate to Pan is an iOS application preparing for release that uses artificial intelligence to analyze photographs of food dishes and generate estimated recipes, including ingredients, instructions, nutrition information, and other culinary content. Once released, the App is intended to provide features including Cook Mode, meal planning, grocery list management, and pantry inventory tracking.</p>
           </section>
 
           <section>
@@ -50,12 +60,12 @@ export default function Terms() {
           <section>
             <h2 className="text-xl font-bold text-white mb-3">4. Subscriptions and Payments</h2>
             <ul className="list-disc list-inside space-y-2 ml-2">
-              <li>The App offers a free tier with 10 lifetime recipe scans at no charge.</li>
-              <li>A Pro subscription (monthly or annual) is available for unlimited scans and additional features.</li>
-              <li>Subscriptions are processed through Apple App Store. All billing, refunds, and subscription management are governed by Apple's terms.</li>
-              <li>Annual subscriptions auto-renew unless cancelled at least 24 hours before the renewal date.</li>
-              <li>A 7-day free trial may be offered. You will not be charged until the trial period ends.</li>
-              <li>To cancel, go to iOS Settings → [your name] → Subscriptions → Plate to Pan.</li>
+              <li>Our planned launch offering includes a starter tier with 10 recipe scans at no charge.</li>
+              <li>A Pro subscription (monthly or annual) is planned for unlimited scans and additional features.</li>
+              <li>Once available, subscriptions will be processed through Apple App Store. All billing, refunds, and subscription management will be governed by Apple's terms.</li>
+              <li>Annual subscriptions, if offered and purchased, will auto-renew unless cancelled at least 24 hours before the renewal date.</li>
+              <li>A 7-day free trial may be offered at launch. You will not be charged until the trial period ends.</li>
+              <li>After subscribing, you can cancel in iOS Settings → [your name] → Subscriptions → Plate to Pan.</li>
             </ul>
           </section>
 

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -8,44 +9,44 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: 'How accurate are the recipes?',
-    a: 'Accuracy depends on the photo quality and dish complexity. A clear, well-lit photo of a distinct dish typically yields a very usable recipe. Think of it as a skilled chef\'s best guess from looking at a dish — not the original chef\'s secret recipe. Always double-check for allergens before cooking.',
+    q: 'When will Plate2Pan be available?',
+    a: 'Plate2Pan is preparing to launch on the App Store soon. This website will be updated with a download link as soon as the app is live.',
   },
   {
-    q: 'What are my 10 free scans?',
-    a: 'Every new account gets 10 recipe scans at no charge, with no time limit — they\'re yours forever. This lets you try the full scanning experience before subscribing. Other features like Cook Mode, meal planning, and grocery lists are available on all plans.',
+    q: 'How accurate will the recipes be?',
+    a: 'Accuracy will depend on the photo quality and dish complexity. A clear, well-lit photo of a distinct dish should yield a useful starting recipe. Think of it as a skilled chef\'s best guess from looking at a dish — not the original chef\'s secret recipe. Always double-check for allergens before cooking.',
   },
   {
-    q: 'How do I cancel my subscription?',
-    a: 'Subscriptions are managed by Apple. To cancel: open iOS Settings → tap your name at the top → Subscriptions → Plate to Pan → Cancel Subscription. Cancellation takes effect at the end of the current billing period.',
+    q: 'Will there be a way to try Plate2Pan?',
+    a: 'A starter tier with 10 recipe scans is planned for launch. Final plan details and introductory offers will be confirmed when the app is available.',
   },
   {
-    q: 'Can I use the app without signing in?',
-    a: 'Yes — you can scan and view recipes without an account. Signing in enables cross-device sync for your cookbook, meal plans, and grocery lists.',
+    q: 'How will subscriptions be managed?',
+    a: 'If you choose a subscription after launch, it will be managed through Apple. You will be able to change or cancel it from the Subscriptions section in iOS Settings.',
   },
   {
-    q: 'How does Cook Mode work?',
-    a: 'Tap "Start Cook Mode" on any recipe. The app goes full-screen with one step at a time, a progress bar, and optional voice readout. Steps with timers show a countdown badge — tap to start it. You\'ll get a notification when the timer ends, even if your screen is off. Swipe left/right to navigate steps.',
+    q: 'Will I be able to use the app without signing in?',
+    a: 'The planned experience allows recipe scanning and viewing without an account. Signing in will enable cross-device sync for your cookbook, meal plans, and grocery lists.',
   },
   {
-    q: 'Does it work with Apple Watch?',
-    a: 'Yes — with a Pro subscription. Install the watch app and your current cook step, timer, and controls appear on your wrist. Tap Next/Back to navigate, and timers sync automatically.',
+    q: 'How will Cook Mode work?',
+    a: 'Cook Mode is designed to show one step at a time with a progress bar, optional voice readout, and countdown timers for timed steps. Notifications are planned so you can keep track even when your screen is off.',
   },
   {
-    q: 'What is Pan Raid?',
-    a: 'Pan Raid (found in the Kitchen tab) lets you photograph your fridge, pantry shelves, or counter. The AI identifies what ingredients you have and updates your pantry inventory. Great for knowing what you can cook before you shop.',
+    q: 'Will it work with Apple Watch?',
+    a: 'Apple Watch support is planned as part of the Pro experience, with cook steps, timers, and navigation available from your wrist.',
   },
   {
-    q: 'How do I adapt a recipe for my diet?',
-    a: 'Go to Profile → Dietary Preferences and select your diets (Keto, Vegan, Gluten-Free, etc.) and any allergies. When you scan a new dish, the recipe will automatically adapt. You can also tap "Refine Recipe" on any saved recipe to re-adapt it.',
+    q: 'What will Pan Raid do?',
+    a: 'Pan Raid is designed to identify ingredients from photos of your fridge, pantry shelves, or counter and use them to help organize your pantry inventory.',
   },
   {
-    q: 'I got a low-confidence result — what do I do?',
-    a: 'Try photographing from a different angle, add a second photo showing the ingredients more clearly, or type a description of the dish in the text field. Low confidence usually means the dish is visually ambiguous — more context helps a lot.',
+    q: 'How will I adapt a recipe for my diet?',
+    a: 'Plate2Pan is designed to let you set dietary preferences and allergies, then adapt generated recipes around those preferences. Always verify ingredient safety for your specific needs.',
   },
   {
-    q: 'My photo isn\'t uploading / the scan is failing.',
-    a: 'Check your internet connection. If the issue persists, try closing and reopening the app. If scans consistently fail, email us at support@plate2pan.app with your device model and iOS version.',
+    q: 'Where can I ask a question before launch?',
+    a: 'Email support@plate2pan.app and we will be happy to help with pre-launch questions.',
   },
 ]
 
@@ -54,9 +55,14 @@ export default function Support() {
     <div className="min-h-screen bg-dark-900">
       <header className="border-b border-white/5 px-6 py-4">
         <div className="max-w-3xl mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-xl bg-brand-orange flex items-center justify-center text-sm">🍳</div>
-            <span className="font-semibold text-white/80">Plate to Pan</span>
+          <Link href="/" aria-label="Plate2Pan home">
+            <Image
+              src="/branding/logo-white.png"
+              alt="Plate2Pan"
+              width={1630}
+              height={370}
+              className="h-auto w-36 opacity-90 hover:opacity-100 transition-opacity"
+            />
           </Link>
           <Link href="/" className="text-sm text-white/40 hover:text-white/70 transition-colors">← Back to home</Link>
         </div>
@@ -64,13 +70,13 @@ export default function Support() {
 
       <main className="max-w-3xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-black mb-2">Support</h1>
-        <p className="text-white/40 text-sm mb-4">Get help with Plate to Pan</p>
+        <p className="text-white/40 text-sm mb-4">Launch information and product help</p>
 
         {/* Contact CTA */}
         <div className="glass-orange rounded-2xl p-6 mb-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
-            <p className="font-semibold text-white">Need direct help?</p>
-            <p className="text-sm text-white/50 mt-1">We typically respond within 1 business day.</p>
+            <p className="font-semibold text-white">Plate2Pan is launching soon</p>
+            <p className="text-sm text-white/50 mt-1">The app is not yet available to download. Questions before launch are welcome.</p>
           </div>
           <a
             href="mailto:support@plate2pan.app"

@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Nav() {
@@ -18,13 +19,15 @@ export default function Nav() {
     }`}>
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <img
-            src="/app-icon.png"
-            alt="Plate to Pan"
-            className="w-9 h-9 rounded-xl group-hover:scale-105 transition-transform"
+        <Link href="/" className="group" aria-label="Plate2Pan home">
+          <Image
+            src="/branding/logo-white.png"
+            alt="Plate2Pan"
+            width={1630}
+            height={370}
+            priority
+            className="h-auto w-[148px] sm:w-[172px] opacity-95 group-hover:opacity-100 group-hover:scale-[1.02] transition-all"
           />
-          <span className="font-semibold text-white tracking-tight">Plate to Pan</span>
         </Link>
 
         {/* Desktop links */}
@@ -32,8 +35,8 @@ export default function Nav() {
           <a href="#features" className="text-sm text-white/60 hover:text-white transition-colors">Features</a>
           <a href="#how-it-works" className="text-sm text-white/60 hover:text-white transition-colors">How It Works</a>
           <a href="#pricing" className="text-sm text-white/60 hover:text-white transition-colors">Pricing</a>
-          <a href="#download" className="px-4 py-2 bg-brand-orange hover:bg-brand-orange-dark rounded-full text-sm font-semibold transition-all hover:scale-105 orange-glow-sm">
-            Download Free
+          <a href="#launch" className="px-4 py-2 bg-brand-orange hover:bg-brand-orange-dark rounded-full text-sm font-semibold transition-all hover:scale-105 orange-glow-sm">
+            Launching Soon
           </a>
         </div>
 
@@ -55,8 +58,8 @@ export default function Nav() {
           <a href="#features" className="text-white/70 hover:text-white" onClick={() => setMenuOpen(false)}>Features</a>
           <a href="#how-it-works" className="text-white/70 hover:text-white" onClick={() => setMenuOpen(false)}>How It Works</a>
           <a href="#pricing" className="text-white/70 hover:text-white" onClick={() => setMenuOpen(false)}>Pricing</a>
-          <a href="#download" className="w-full text-center px-4 py-3 bg-brand-orange rounded-full font-semibold" onClick={() => setMenuOpen(false)}>
-            Download Free
+          <a href="#launch" className="w-full text-center px-4 py-3 bg-brand-orange rounded-full font-semibold" onClick={() => setMenuOpen(false)}>
+            Launching Soon
           </a>
         </div>
       )}
