@@ -9,6 +9,10 @@ import {
   CalendarDays,
   Refrigerator,
   CreditCard,
+  Search,
+  Replace,
+  Compass,
+  MessageCircleQuestion,
 } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -45,6 +49,24 @@ const sections = [
         desc: 'Hands-free, step-by-step cooking with timers, voice control, and read-aloud.',
       },
       {
+        href: '/help/spark-ai',
+        icon: MessageCircleQuestion,
+        title: 'Ask Spark: Your AI Cooking Assistant',
+        desc: 'Get substitutions, technique tips, and answers mid-cook from the in-app chat bubble.',
+      },
+      {
+        href: '/help/second-act',
+        icon: Replace,
+        title: 'Second Act: Recipe Variants',
+        desc: 'Adapt any saved recipe to a different diet or cooking style with AI.',
+      },
+      {
+        href: '/help/explore',
+        icon: Search,
+        title: 'Explore: Find & Generate Recipes',
+        desc: 'Search by keyword or ingredient, filter to your needs, or generate a recipe with AI.',
+      },
+      {
         href: '/help/meal-planning',
         icon: CalendarDays,
         title: 'Meal Planning & Grocery Lists',
@@ -55,6 +77,12 @@ const sections = [
         icon: Refrigerator,
         title: 'Pan Raid',
         desc: 'Turn what you already have into a recipe you can cook tonight.',
+      },
+      {
+        href: '/help/discover',
+        icon: Compass,
+        title: 'Discover: Community Recipes',
+        desc: 'Browse recipes from other home cooks, save them in one tap, and share your own.',
       },
     ],
   },

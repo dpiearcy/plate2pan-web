@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy — Plate to Pan',
-  description: 'Privacy Policy for the Plate to Pan iOS app and website.',
+  description: 'Privacy Policy for the Plate to Pan iOS and Android app and website.',
 }
 
 export default function PrivacyPolicy() {
@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-3">1. Who We Are</h2>
-            <p>Plate to Pan ("Plate to Pan," "we," "us," or "our") is an iOS application and website operated by Abounding Media LLC. Our contact email is <a href="mailto:support@plate2pan.app" className="text-brand-orange hover:underline">support@plate2pan.app</a>.</p>
+            <p>Plate to Pan ("Plate to Pan," "we," "us," or "our") is a mobile application (for iOS and Android) and website operated by Abounding Media LLC. Our contact email is <a href="mailto:support@plate2pan.app" className="text-brand-orange hover:underline">support@plate2pan.app</a>.</p>
           </section>
 
           <section>
@@ -57,7 +57,7 @@ export default function PrivacyPolicy() {
               <li>App usage data (features used, scan counts) to improve the product and enforce free-tier limits.</li>
               <li>Crash reports and diagnostic logs to identify and fix bugs.</li>
               <li>Device type, OS version, and app version for compatibility.</li>
-              <li>Purchase and subscription status (managed by Apple App Store and RevenueCat).</li>
+              <li>Purchase and subscription status (managed by the Apple App Store, Google Play, and RevenueCat).</li>
             </ul>
 
             <h3 className="font-semibold text-white/90 mt-4 mb-2">2c. Information We Do NOT Collect</h3>
@@ -74,7 +74,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc list-inside space-y-1 ml-2">
               <li>To process your dish photos and return a recipe via our AI provider (Anthropic, Inc.).</li>
               <li>To sync your cookbook, meal plans, and grocery lists across your devices (via Firebase).</li>
-              <li>To manage your subscription and enforce usage limits (via RevenueCat and Apple).</li>
+              <li>To manage your subscription and enforce usage limits (via RevenueCat, Apple, and Google).</li>
               <li>To respond to support requests.</li>
               <li>To improve the accuracy and reliability of our recipe analysis.</li>
               <li>To send optional push notifications (timers, meal plan reminders) that you can disable at any time.</li>
@@ -97,7 +97,8 @@ export default function PrivacyPolicy() {
                     ['Anthropic, Inc.', 'AI recipe analysis (your photo and description are sent here; not stored by Anthropic after processing)'],
                     ['Google Firebase', 'Cloud database for recipe sync, authentication'],
                     ['RevenueCat', 'Subscription management and purchase validation'],
-                    ['Apple Inc.', 'App distribution, Sign in with Apple, push notifications, App Store payments'],
+                    ['Apple Inc.', 'iOS app distribution, Sign in with Apple, push notifications, App Store payments'],
+                    ['Google LLC', 'Android app distribution (Google Play), Sign in with Google, push notifications, Google Play payments'],
                   ].map(([provider, purpose]) => (
                     <tr key={provider}>
                       <td className="py-2.5 pr-4 text-white/70 font-medium whitespace-nowrap">{provider}</td>
@@ -119,7 +120,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc list-inside space-y-1 ml-2">
               <li><strong className="text-white/80">Access:</strong> You can view all your saved data within the app at any time.</li>
               <li><strong className="text-white/80">Deletion:</strong> You can delete your account and all associated data from Settings → Account → Delete Account. Data is permanently removed within 30 days.</li>
-              <li><strong className="text-white/80">Notifications:</strong> You can disable push notifications in iOS Settings at any time.</li>
+              <li><strong className="text-white/80">Notifications:</strong> You can disable push notifications in your device Settings (iOS or Android) at any time.</li>
               <li><strong className="text-white/80">Data portability:</strong> You can export your recipes as PDF or plain text from within the app.</li>
             </ul>
             <p className="mt-3">If you are in the European Economic Area (EEA), United Kingdom, or California, you may have additional rights under GDPR or CCPA. Contact us at <a href="mailto:support@plate2pan.app" className="text-brand-orange hover:underline">support@plate2pan.app</a> to exercise any of these rights.</p>

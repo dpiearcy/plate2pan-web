@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Terms of Service — Plate to Pan',
-  description: 'Terms of Service for the Plate to Pan iOS app and website.',
+  description: 'Terms of Service for the Plate to Pan iOS and Android app and website.',
 }
 
 export default function Terms() {
@@ -42,7 +42,7 @@ export default function Terms() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-3">2. Description of Service</h2>
-            <p>Plate to Pan is an iOS application preparing for release that uses artificial intelligence to analyze photographs of food dishes and generate estimated recipes, including ingredients, instructions, nutrition information, and other culinary content. Once released, the App is intended to provide features including Cook Mode, meal planning, grocery list management, and pantry inventory tracking.</p>
+            <p>Plate to Pan is a mobile application (for iOS and Android) preparing for release that uses artificial intelligence to analyze photographs of food dishes and generate estimated recipes, including ingredients, instructions, nutrition information, and other culinary content. Once released, the App is intended to provide features including Cook Mode, meal planning, grocery list management, and pantry inventory tracking.</p>
           </section>
 
           <section>
@@ -62,10 +62,10 @@ export default function Terms() {
             <ul className="list-disc list-inside space-y-2 ml-2">
               <li>Our planned launch offering includes a starter tier with 10 recipe scans at no charge.</li>
               <li>A Pro subscription (monthly or annual) is planned for unlimited scans and additional features.</li>
-              <li>Once available, subscriptions will be processed through Apple App Store. All billing, refunds, and subscription management will be governed by Apple's terms.</li>
+              <li>Once available, subscriptions will be processed through the Apple App Store (on iOS) or Google Play (on Android), depending on your device. All billing, refunds, and subscription management will be governed by Apple's or Google's terms, respectively.</li>
               <li>Annual subscriptions, if offered and purchased, will auto-renew unless cancelled at least 24 hours before the renewal date.</li>
               <li>A 7-day free trial may be offered at launch. You will not be charged until the trial period ends.</li>
-              <li>After subscribing, you can cancel in iOS Settings → [your name] → Subscriptions → Plate to Pan.</li>
+              <li>After subscribing, you can cancel any time. On iOS: Settings → [your name] → Subscriptions → Plate to Pan. On Android: Google Play → Menu → Subscriptions → Plate to Pan.</li>
             </ul>
           </section>
 

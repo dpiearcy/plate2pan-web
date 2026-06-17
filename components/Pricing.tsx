@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react'
 
 const freeFeatures = [
-  '10 starter recipe scans planned',
+  '10 free recipe scans per month',
   'Full Cook Mode with timers',
   'Save to cookbook',
   'Dietary profile setup',
@@ -11,7 +11,7 @@ const freeFeatures = [
 
 const proFeatures = [
   'Unlimited recipe scans',
-  'Everything in Starter Tier',
+  'Everything in Free',
   'Apple Watch companion',
   'Meal planner (Mon–Sun)',
   'AI grocery list merge',
@@ -44,14 +44,14 @@ export default function Pricing() {
       <div ref={ref} className="relative z-10 max-w-4xl mx-auto px-6 section-hidden">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 glass-orange rounded-full text-sm font-medium text-brand-orange mb-6">
-            Planned Launch Pricing
+            Simple Pricing
           </div>
           <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
             Try it free.{' '}
             <span className="gradient-text">Upgrade when ready.</span>
           </h2>
           <p className="text-white/50 text-lg max-w-lg mx-auto">
-            These introductory plans are intended for launch and may change before release.
+            Start free with 10 scans a month. Upgrade, downgrade, or cancel anytime.
           </p>
         </div>
 
@@ -59,9 +59,9 @@ export default function Pricing() {
           {/* Free tier */}
           <div className="glass rounded-3xl p-8 flex flex-col">
             <div className="mb-6">
-              <div className="text-white/50 text-sm font-medium mb-2">Planned Starter Tier</div>
+              <div className="text-white/50 text-sm font-medium mb-2">Free</div>
               <div className="text-4xl font-black mb-1">$0</div>
-              <div className="text-white/40 text-sm">10 starter scans planned</div>
+              <div className="text-white/40 text-sm">10 free scans per month</div>
             </div>
 
             <ul className="flex-1 space-y-3 mb-8">
@@ -75,11 +75,12 @@ export default function Pricing() {
               ))}
             </ul>
 
-            <div
-              className="w-full py-3.5 glass rounded-2xl text-center font-semibold text-white/55"
+            <a
+              href="#launch"
+              className="w-full py-3.5 glass rounded-2xl text-center font-semibold text-white/80 hover:text-white hover:bg-white/8 transition-all block"
             >
-              Available at Launch
-            </div>
+              Get Started Free
+            </a>
           </div>
 
           {/* Pro tier */}
@@ -97,11 +98,11 @@ export default function Pricing() {
               </div>
 
               <div className="mb-1">
-                <span className="text-4xl font-black">$49.99</span>
+                <span className="text-4xl font-black">$29.99</span>
                 <span className="text-white/40 text-sm ml-1">/year</span>
               </div>
-              <div className="text-white/40 text-sm mb-1">or $5.99/month</div>
-              <div className="text-brand-orange/80 text-xs font-medium mb-6">≈ $4.17/mo — save 30% vs monthly</div>
+              <div className="text-white/40 text-sm mb-1">or $3.99/month</div>
+              <div className="text-brand-orange/80 text-xs font-medium mb-6">≈ $2.50/mo — save 38% vs monthly</div>
 
               <ul className="flex-1 space-y-3 mb-8">
                 {proFeatures.map((f, i) => (
@@ -114,13 +115,14 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <div
-                className="w-full py-3.5 bg-brand-orange/80 rounded-2xl text-center font-bold text-white orange-glow block"
+              <a
+                href="#launch"
+                className="w-full py-3.5 bg-brand-orange hover:bg-brand-orange-dark rounded-2xl text-center font-bold text-white orange-glow block transition-all"
               >
-                Available at Launch
-              </div>
+                Start Free Trial
+              </a>
 
-              <p className="text-center text-white/30 text-xs mt-3">Trial offer planned for launch</p>
+              <p className="text-center text-white/30 text-xs mt-3">7-day free trial included</p>
             </div>
           </div>
         </div>
